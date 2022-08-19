@@ -3,7 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body {
+    font-family: 'Lato', sans-serif;
+    height: 1500px;
+}
+html{
+    scroll-behavior: smooth;
+}
 button a {
     color: var(--white-color);
     text-decoration: none;
@@ -11,6 +17,488 @@ button a {
 span a {
     color: white;
     text-decoration: none;
+}
+
+.btn {
+    padding: 15px 20px;
+}
+.btn-main{
+    background: var(--main-color);
+color: var(--white-color);
+border: 2px solid var(--main-color);
+}
+.btn-main:hover{
+color: var(--main-color);
+background: transparent;
+}
+.btn-light{
+background: transparent;
+border: 2px solid var(--main-color);
+}
+.btn-light:hover{
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+.banner-icon{
+    margin-left: 10px;
+}
+.backdrop{
+    background: var(--light-text-color);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.nav-mobile{
+    background: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+    display: none;
+}
+
+.nav-mobile_brand{
+    display: flex;
+    align-items: center;
+}
+.mobile-nav_logo-holder{
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+    font-size: 25px;
+    padding: 5px;
+}
+.nav-mobile_brand span {
+color: var(--white-color);
+margin-left: 10px;
+font-size: 25px;
+text-transform: capitalize;
+font-weight: 600;
+}
+
+.hamburger-menu{
+    /* border: 2px solid var(--white-color); */
+    width: 25px;
+    height: 25px; 
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.menubars{
+height: 3px;
+background: var(--white-color);
+width: 100%;
+position: relative;
+}
+.menubars::before,
+.menubars::after{
+    content: '';
+    background: var(--white-color);
+    position: absolute;
+    width: 100%;
+    height: 3px;
+}
+.menubars::before{
+    transform: translateY(-10px);
+}
+.menubars::after{
+    transform: translateY(+10px);
+}
+
+.show .menubars{
+    background: transparent;
+}
+
+.show .menubars::before{
+    transform: rotate(45deg);
+    background: var(--main-color);
+}
+.show .menubars::after{
+    transform: rotate(-45deg);
+    background: var(--main-color);
+}
+
+
+
+.mobile_link-holder{
+display: none ;
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: var(--main-color);
+    /* padding-left: 15px; */
+}
+.showlinks{
+    display: block;
+}
+.mobile_link-holder button {
+    border: 2px solid var(--white-color);
+    background: transparent;
+    color: var(--white-color);
+    margin-left: 15px;
+}
+.mobile_link-holder li{
+    list-style: none; 
+}
+
+.mobile-header-links{
+display: block;
+padding: 15px;
+text-decoration: none;
+color: var(--white-color);
+}
+.mobile-header-links:hover,
+.mobile-header-links:focus{
+    background: var(--white-color);
+color: var(--main-color);
+}
+.active-link{
+    background: var(--white-color);
+    color: var(--main-color);
+    /* width: 100%; */
+}
+
+.mobile-link_holder button{
+    border: 2px solid var(--white-color);
+    background: transparent;
+    color: var(--white-color);
+    margin-left: 15px;
+}
+
+
+
+
+.nav-desktop{
+    position: fixed;
+    background: var(--white-color);
+    /* display: flex; */
+    width: 100%;
+}
+.header-logo{
+    background: var(--main-color);
+    width: 100px;
+    height: 70px;
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    top: 0;
+    left: 60px;
+    position: absolute;
+}
+
+.link-holder{
+display: flex;
+justify-content: flex-end;
+}
+.link-holder button{
+    margin-left: 20px;
+}
+.link-holder ul{
+    display: flex;
+    width: 500px;
+}
+.link-holder li{
+    list-style: none;
+padding: 10px;
+}
+.link-holder li:hover{
+    border: 2px solid var(--main-color);
+}
+.header-links {
+    color: var(--main-color);
+    text-decoration: none;
+    display: block;
+}
+
+.header-banner{
+    /* border: 3px solid tomato; */
+    /* height: 450px; */
+    background: url('./images/dx1-foodplug/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 130px;
+padding-bottom: 30px;
+background-position: bottom left;
+}
+.header-banner_container{
+    /* border: 3px solid black; */
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+}
+.header-banner{
+    padding: 50px;
+}
+.header-banner_content{
+/* border: 3px solid blue; */
+/* height: 450px; */
+width: 50%;
+}
+.header-banner_content h1{
+    color: var(--main-color-dark);
+    font-size: 45px;
+    line-height: 1.1;
+    font-weight: 300;
+}
+.header-banner_content p{
+    margin: 20px 0;
+    color: var(--text-color);
+    line-height: 1.6;
+} 
+.header-banner_content button{
+    margin: 10px;
+}
+.header-counter{
+    background: var(--main-color);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+}
+.counter-item{
+    width: 180px;
+    /* height: 150px; */
+    /* border: 3px solid var(--white-color); */
+    text-align: center;
+    color: var(--white-color);
+}
+.counter-item h2{
+font-size: 28px;
+font-weight: bolder;
+margin-bottom: 5px;
+}
+.about-us{
+    padding: 30px 10px;
+}
+.about-us_card-container{
+    /* border: 3px solid tomato; */
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.about-us_card-imageholder{
+    border-radius: 30px;
+    height: 38 0px;
+    width: 48%;
+    /* border: 3px solid black; */
+    overflow: hidden;
+}
+.about-us_card-imageholder img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.about-us_text-contentholder{
+    /* height: 350px; */
+    width: 48%;
+    /* border: 3px solid blue; */
+}
+.about-us_text-contentholder ul{
+    margin-bottom: 20px;
+}
+.about-us_text-contentholder li{
+list-style: none;
+}
+.check-icon{
+    color: var(--main-color);
+    margin-right: 15px;
+    font-weight: bolder;
+    font-size: 23px;
+}
+.about-us_text-contentholder h2{
+    color: var(--main-color);
+    background: var(--light-text-color);
+    border-right: 5px solid var(--main-color);
+    border-left: 5px solid var(--main-color);
+    padding: 10px;
+}
+.about-us_text-contentholder p{
+    margin: 20px 0;
+}
+.cardicon{
+    margin-left: 10px;
+}
+.about-us_banner-holder{
+display: flex;
+flex-direction: column;
+align-items: center;
+/* height: 250px; */
+    background: var(--gray-gradient), url(./images/dx1-foodplug/about3.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: bottom right;
+padding: 30px 20px;
+/* margin: 0 auto; */
+/* text-align: left; */
+}
+.about-us_banner-holder h2 {
+    color: var(--main-color);
+    font-size: 30px;
+    /* border-left: 3px solid var(--main-color); */
+    /* border-right: 3px solid var(--main-color); */
+    /* margin:  auto 0; */
+}
+.about-us_banner-holder p {
+margin: 20px 0;
+}
+.btn-waves{
+    margin-top: 20px;
+ font-size: 30px;
+height: 50px;
+width: 50px;
+border-radius: 50%;
+color: var(--white-color);
+background: var(--main-color);
+border: 2px solid var(--white-color);
+display: flex;
+justify-content: center;
+align-items: center;
+animation: ripple 2s infinite;
+}
+.explore-foods{
+    padding: 30px 0;
+    /* border: 3px solid tomato; */
+    border-bottom: 70px solid var(--main-color);
+    width: 90%;
+    margin: 0 auto;
+    /* justify-content: center; */
+    text-align: center;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* display: flex; */
+}
+.explore-foods h2 {
+    color: var(--main-color);
+    
+}
+.explore-foods h2+p {
+    margin: 20px;
+}
+.foodcard-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.foodcard_item {
+    /* border: 3px solid tomato; */
+    width: 320px;
+    overflow: hidden;
+}
+
+.foodcard_image-holder{
+    height: 250px;
+    /* border: 3px solid black; */
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    overflow: hidden;
+}
+.foodcard_image-holder img {
+    width: 100%;
+    height: 100%;
+} 
+.foodcard_text-holder{
+    text-align: left;
+}
+.foodcard_text-holder h4, 
+.foodcard_text-holder h3 {
+margin: 10px 0;
+}
+.foodcard_text-holder h3 {
+    border-bottom: 0.5px solid var(--light-text-color);
+    padding-bottom: 10px;
+}
+.foodcard_text-holder span{
+    text-decoration: line-through;
+    color: var(--text-color);
+}
+.foodcard_text-holder button:hover{
+    color: var(--main-color);
+}
+.faq{
+    width: 90%;
+    margin: 0 auto;
+text-align: center;
+padding-top: 20px;
+}
+.faqs_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 25px ;
+}
+.faqs_items {
+    max-width: 45%;
+}
+.faqs_items h3 {
+    text-align: center;
+    color: var(--main-color-dark);
+    margin: 20px 0;
+    font-weight: bolder;
+}
+.faqs_item span {
+    color: var(--main-color);
+    margin: 0 10px 0 0;
+}
+.faqs_items p {
+    text-align: justify;
+}
+.faq_parallax{
+    height: 200px;
+    background:var(--gradient), url(./images/dx1-foodplug/cta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* color: var(--white-color);s */
+}
+.faq_parallax h2{
+    color: white;
+}
+
+.cta{
+    padding: 30px 0;
+    text-align: center;
+}
+.cta h2 {
+color: var(--main-color-dark);
+font-size: 35px;
+font-weight: bolder;
+}
+.cta p {
+    margin: 20px 0;
+}
+.cta_input-holder{
+    display: flex;
+    justify-content: center;
+}
+.cta input{
+    padding: 15px 10px;
+    border:2px solid var(--main-color) ;
+    border-right: none;
+    outline: none;
+    width: 200px;
+ transition: all is ease;   
+}
+.cta input:hover{
+    width:400px;
+}
+.cta button{
+    border: 2px solid var(--main-color);
+background: var(--main-color);
+color: var(--white-color);
 }
 
 footer{

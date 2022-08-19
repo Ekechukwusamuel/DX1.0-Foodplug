@@ -5,28 +5,228 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foodplug</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./fontawesome/css/all.css">
     <link rel="stylesheet" href="defaults.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="mobile.css">
 </head>
 <body>
+<div class="backdrop" onclick="Addclass()"></div>
+<header>
+    <nav class="nav-mobile">
+    <div class="nav-mobile_brand">
+        <div class="mobile-nav_logo-holder">
+       <i class="fa-regular fa-hand-lizard"></i>
+       </div>
+       <span>FoodPlug</span>
+    </div>
+    <div class="hamburger-menu" onclick="Addclass()">
+            <div class="menubars"></div>
+        </div>
+            <div class="mobile_link-holder">
+            <ul>
+                <li><a href="#" class="mobile-header-links active-link">Home</a></li>
+                <li><a href="#aboutus" class="mobile-header-links">About Us</a></li>
+                <li><a href="#explorefoods" class="mobile-header-links">Explore Food</a></li>
+                <li><a href="#faq" class="mobile-header-links">FAQ</a></li>
+            </ul>
+            <button class="btn">+234-9131133564</button>
+            
+        </div>
+
+    </nav>
+<nav class="nav-desktop">
+    <div class="header-logo">
+    <i class="fa-regular fa-hand-lizard"></i>
+</div>
+    <div class="link-holder">
+        <ul>
+            <li><a href="#" class="header-links">Home</a></li>
+            <li><a href="#aboutus" class="header-links">About Us</a></li>
+            <li><a href="#explorefoods" class="header-links">Explore Food</a></li>
+            <li><a href="#faq" class="header-links">FAQ</a></li>
+        </ul>
+        <buutton class="btn btn-main">+234-9131133564</buutton>
+    </div>
+</nav>
+
+</header> 
+<section class=" header-banner">
+    <div class="header-banner_container">
+        <div class="header-banner_content">
+        <h1>GOOD FOOD CHOICES <br/>ARE GOOD <br/>INVESTMENT</h1>
+        <p>We offer 6 delicious pizzas, from basic cheese and basil pizza (€6)
+            to our signature Classic pizzeria ('Taverne'). A variety of our speciality pizzerias offer great value
+            money such as 'Pizzeria de la Nazionale', where we’ve created a new delicious pizza in the heart of Milan,
+            and the ‘Madrone’ pizzeria, which offers all-day dining, with an Italian twist to the men</p>
+        <button class="btn btn-light">Learn more  <i class="fa-solid fa-arrow-right-long banner-icon"></i></button>
+        <button class="btn btn-main">Order now  <i class="fa-solid fa-basket-shopping banner-icon"></i></button>
+    </div>
+</div>
+</section>
+<section class="header-counter">
+    <!-- <div class="counter-item"> -->
+        <div class="counter-item">
+        <h2>6482+</h2>
+        <p>SAVING</p>
+        </div>
+    <div class="counter-item">
+        <!-- <div class="counter-item"> -->
+            <h2>1287+</h2>
+<P>PHOTO</P>
+        </div>
+    <div class="counter-item">
+        <!-- <div class="counter-item"> -->
+        <h2>1004+</h2>
+        <P>ROCKET</P>
+        </div>
+    <div class="counter-item">
+        <!-- <div class="counter-item"> -->
+        <h2>4831+</h2>
+<p>GLOBES</p>
+        </div>
+</section>
+
+<main>
+    <section class="about-us" id="aboutus">
+        <div class="about-us_card-container">
+            <div class="about-us_card-imageholder"><img src="./images/dx1-foodplug/about1.png" alt="">
+            </div>
+            <div class="about-us_text-contentholder">
+                <h2>We pride ourselves on<br /> making real food from the<br /> best ingredients.</h2>
+                <p> 9+ We also provide gluten free menu and desserts for those who are on the look out for something new. We are passionate about keeping the kitchen fresh and in tact, and are very hard working, always on time and making sure that the end-product is pleasing for everyone. Our menu is based on the best seasonal and imported ingredients.</p>
+           <button class="btn btn-main">Learn more  <i class="fa-solid fa-arrow-right-long cardicon"></i></button>
+            </div>
+        </div>
+        <div class="about-us_card-container">
+           <div class="about-us_text-contentholder">
+            <h2>We making everything by<br/> hand with the best possible<br/> ingredient </h2>
+            <p>We will show you what it's like to make it on the run with us, and we don't mind sharing a few too many laughs along the way!</p>
+           <ul>
+           <li><i class="fa-solid fa-check check-icon"></i> Panzenella</li>
+            <li><i class="fa-solid fa-check check-icon"></i>Mushroom Risto</li>
+           <li><i class="fa-solid fa-check check-icon"></i>Pasta Carbonara </li>
+         <li><i class="fa-solid fa-check check-icon"></i>Caprese Salad with Pesto Sauce </li>
+           </ul>
+
+            <button class="btn btn-main">Learn more  <i class="fa-solid fa-arrow-right-long cardicon"></i></button>
+           </div> 
+           <div class="about-us_card-imageholder">
+            <img src="./images/dx1-foodplug/about2.png" alt="">
+        </div>
+        </div>
+        <div class="about-us_banner-holder">
+            <h2>When a man's stomach is full it makes no difference whether he is rich or poor</h2>
+            <p>We bring you what you always wanted, and the best in authentic Italian food – with a menu that ranges from starters, lasagna, fresh pasta, pizzas, risotto, antipasti, pasta e fettuccini, and so much more. We don’t just serve food, but we do an amazing job at making it special. We don’t just provide unique food, we think about your dining experience.
+
+            </p>
+        <button class="btn-waves"><i class="fa-solid fa-play"></i></button>
+        </div>
+    </section>
+<section class="explore-foods" id="explorefoods">
+    <h2>Explore Our Foods</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eos odit incidunt reiciendis officia explicabo sint, magnam ex laboriosam vel sed eligendi architecto? At iusto nesciunt, quod est assumenda cupiditate! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+<div class="foodcard-container">
+    <div class="foodcard_item">
+        <div class="foodcard_image-holder"> 
+            <img src="./images/dx1-foodplug/explore1.jpg" alt="">  
+    </div>
+    <div class="foodcard_text-holder">
+        <h4>Rainbow Vegetable Sandwich</h4>
+          <p>Time:15-20 mins|serves:1</p>
+        <h3>$10.50 <span>$11.70</span></h3>
+        <button class="btn btn-main">Order now</button>
+    </div>
+
+</div>
+    <div class="foodcard_item">
+        <div class="foodcard_image-holder"> 
+            <img src="./images/dx1-foodplug/explore2.jpg" alt="">  
+    </div>
+    <div class="foodcard_text-holder">
+        <h4>Vegetarian Burger</h4>
+          <p>Time:30-45 mins|serves:1</p>
+        <h3>$9.20 <span>$10.50</span></h3>
+        <button class="btn btn-main">Order now</button>
+    </div>
+
+</div>
+    <div class="foodcard_item">
+        <div class="foodcard_image-holder"> 
+            <img src="./images/dx1-foodplug/explore3.jpg" alt="">  
+    </div>
+    <div class="foodcard_text-holder">
+        <h4>RRaspberry Stuffed French Toast</h4>
+          <p>Time:10-15 mins|serves:1</p>
+        <h3>$10.50 <span>$11.70</span></h3>
+        <button class="btn btn-main">Order now</button>
+    </div>
+
+</div>
+</section>    
+<section class="faq" id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faqs_container">
+        <div class="faqs_items">
+            <h3><span><i class="fa-solid fa-leaf"></i></span>Is Foodera Bread really baked fresh each day?</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eos odit incidunt reiciendis officia explicabo sint, magnam ex laboriosam vel sed eligendi architecto? At iusto nesciunt, quod est assumenda cupiditate! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>  
+        </div>
+        <div class="faqs_items">
+            <h3><span><i class="fa-solid fa-leaf"></i></span>Is Foodera Bread really baked fresh each day?</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eos odit incidunt reiciendis officia explicabo sint, magnam ex laboriosam vel sed eligendi architecto? At iusto nesciunt, quod est assumenda cupiditate! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>  
+        </div>
+        <div class="faqs_items">
+            <h3><span><i class="fa-solid fa-leaf"></i></span>Is Foodera Bread really baked fresh each day?</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eos odit incidunt reiciendis officia explicabo sint, magnam ex laboriosam vel sed eligendi architecto? At iusto nesciunt, quod est assumenda cupiditate! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>  
+        </div>
+        <div class="faqs_items">
+            <h3><span><i class="fa-solid fa-leaf"></i></span>Is Foodera Bread really baked fresh each day?</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eos odit incidunt reiciendis officia explicabo sint, magnam ex laboriosam vel sed eligendi architecto? At iusto nesciunt, quod est assumenda cupiditate! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>  
+        </div>
+    </div>
+<div class="faq_parallax">
+    <h2>Baked fresh daily by bakers with passion.</h2>
+    <button class="btn btn-main">learn more</button>
+</div>
+</section>
+<section class="cta">
+    <h2>Hurry up! Subscribe to our newsletter<br/>
+        and get 25% Off</h2>
+        <p> Limited time offer for this month. No credit card required.</p>
+        <div class="cta_input-holder">
+<input type="text"
+placeholder="xxxxxx@gmail.com">
+    <button class="btn">Subscribe</button>
+    </div>
+</section>
+</main>
+
+
+
+
+
+
+
     <footer>
         <div class="footer-copywrite">
             &copy; 2022 Foodplug, built by Ekechukwu samuel at Dx1.0 Bootcamp
         </div>
         <div class="footer-icon_holder">
             <span class="footer-icon">
-              <a href="www.gogle.com"target="_blank">
+              <a href="https://www.linkedin.com/in/ekechukwu-samuel-84140a248/"target="_blank">
                 <i class="fa-brands fa-linkedin-in"></i>
                 </a>
             </span>
             <span class="footer-icon">
-               <a href="www.gogle.com"target="_blank">
+               <a href="https://twitter.com/Samuel736630061"target="_blank">
                 <i class="fa-brands fa-twitter"></i>
                </a>
             </span>
             <span class="footer-icon">
-                    <a href="www.gogle.com"target="_blank">
+                    <a href=""target="_blank">
                  <i class="fa-brands fa-github"></i>
             </a>
             </span>
@@ -39,5 +239,6 @@
             </button>
         </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
